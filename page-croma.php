@@ -70,7 +70,7 @@
           <div class="texto-equipamento"><h3>Cromatógrafo Gasoso acoplada à Espectrometria de Massas (CG-MS)</h3><p>É utilizado para a separação, identificação e quantificação de compostos orgânicos voláteis e semivoláteis em diferentes matrizes. A técnica combina alta eficiência cromatográfica e elevada seletividade, sendo essencial em estudos de poluição atmosférica, veicular e ambiental, bem como em aplicações ambientais, alimentares e de produtos naturais.</p></div>
         </div>
         <div class="card-equipamentos">
-          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/gc-bid2.png" alt="Imagem do FID"></div>
+          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/gc-fid.jpg" alt="Imagem do FID"></div>
           <div class="texto-equipamento"><h3>Cromatógrafo Gasoso com Detector de Ionização de Chama (GC-FID)</h3><p>É utilizado na análise quantitativa de compostos orgânicos voláteis e semivoláteis, com excelente reprodutibilidade e sensibilidade. É uma técnica consolidada para aplicações em controle ambiental, avaliação da poluição atmosférica e veicular, e análises de produtos ambientais e naturais.</p></div>
         </div>
         <div class="card-equipamentos">
