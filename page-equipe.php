@@ -6,6 +6,10 @@
         <?php
         // FUNÇÃO INTELIGENTE: Lê o banco de dados e monta o HTML do card automaticamente
         function renderizar_membros($slug_cargo, $tipo_card = 'member-card', $tag_wrapper = 'li') {
+            // Whitelist: estes valores viram nome de tag/classe HTML
+            if ( ! in_array( $tag_wrapper, array( 'li', 'div' ), true ) ) { $tag_wrapper = 'li'; }
+            $tipo_card = sanitize_html_class( $tipo_card );
+
             $args = array(
                 'post_type' => 'membro',
                 'posts_per_page' => -1,
@@ -27,26 +31,26 @@
                     $rg = get_post_meta(get_the_ID(), 'link_researchgate', true);
                     ?>
                     
-                    <<?php echo $tag_wrapper; ?> class="<?php echo $tipo_card; ?>">
+                    <<?php echo $tag_wrapper; ?> class="<?php echo esc_attr( $tipo_card ); ?>">
                         <div class="member-photo">
                             <?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
                         </div>
                         <div class="member-info">
                             <h3 class="member-name"><?php the_title(); ?></h3>
                             
-                            <div class="member-description"><?php echo get_the_excerpt(); ?></div>
+                            <div class="member-description"><?php echo esc_html( get_the_excerpt() ); ?></div>
                             
                             <div class="member-contact">
                                 <?php if(!empty($rg)) : ?>
-                                    <a class="contact-icon email" title="ResearchGate" href="<?php echo esc_url($rg); ?>" target="_blank"></a>
+                                    <a class="contact-icon email" title="ResearchGate" href="<?php echo esc_url($rg); ?>" target="_blank" rel="noopener noreferrer"></a>
                                 <?php endif; ?>
                                 
                                 <?php if(!empty($lattes)) : ?>
-                                    <a class="contact-icon cv" title="Lattes" href="<?php echo esc_url($lattes); ?>" target="_blank"></a>
+                                    <a class="contact-icon cv" title="Lattes" href="<?php echo esc_url($lattes); ?>" target="_blank" rel="noopener noreferrer"></a>
                                 <?php endif; ?>
                                 
                                 <?php if(!empty($orcid)) : ?>
-                                    <a class="contact-icon lattes" title="Orcid" href="<?php echo esc_url($orcid); ?>" target="_blank"></a>
+                                    <a class="contact-icon lattes" title="Orcid" href="<?php echo esc_url($orcid); ?>" target="_blank" rel="noopener noreferrer"></a>
                                 <?php endif; ?>
                             </div>
                         </div>

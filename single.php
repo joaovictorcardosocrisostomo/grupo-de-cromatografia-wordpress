@@ -14,7 +14,7 @@
           </h1>
           
           <div class="meta-noticia" style="color: var(--text-medium); margin-bottom: 2rem; font-size: 0.95rem;">
-            Publicado em: <strong><?php echo get_the_date(); ?></strong>
+            Publicado em: <strong><?php echo esc_html( get_the_date() ); ?></strong>
           </div>
 
           <?php if ( has_post_thumbnail() ) : ?>
@@ -33,7 +33,7 @@
         ?>
         
         <div style="margin-top: 4rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
-          <a href="<?php echo home_url('/noticias'); ?>" style="color: var(--primary); font-weight: bold; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+          <a href="<?php echo esc_url( home_url('/noticias') ); ?>" style="color: var(--primary); font-weight: bold; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
             ← Voltar para todas as notícias
           </a>
         </div>

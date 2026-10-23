@@ -21,29 +21,29 @@ if ( is_page('croma') ) {
         <?php if ( is_front_page() || is_home() || is_page('equipe') || is_page('noticias') ) : ?>
             <div id="logoHeader">
               <div>
-                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo labitech branco.svg" alt=""></div>
-                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo lanagua branco.svg" alt=""></div>
-                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo labpoa branco.svg" alt=""></div>
-                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo labcroma branco.svg" alt=""></div>
-                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo lat branco.svg" alt=""></div>
+                <div class="logo"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/brand/logo labitech branco.svg" alt=""></div>
+                <div class="logo"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/brand/logo lanagua branco.svg" alt=""></div>
+                <div class="logo"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/brand/logo labpoa branco.svg" alt=""></div>
+                <div class="logo"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/brand/logo labcroma branco.svg" alt=""></div>
+                <div class="logo"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/brand/logo lat branco.svg" alt=""></div>
               </div>
             </div>
         <?php else : ?>
             <div class="footer-container">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/<?php echo $logo_footer; ?>" alt="Logo Rodapé" />
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/brand/<?php echo esc_attr( $logo_footer ); ?>" alt="Logo Rodapé" />
             </div>
         <?php endif; ?>
 
         <div class="footer-container"><p>Todos os direitos reservados</p></div>
         <div class="footer-container">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/ufc-logo.svg" alt="UFC" class="logo-ufc"/>
+          <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/brand/ufc-logo.svg" alt="UFC" class="logo-ufc"/>
         </div>
       </div>
     </footer>
 
     <div>
       <a href="#hero" class="devolta" aria-label="Retornar ao topo">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="Seta subir" />
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="Seta subir" />
       </a>
     </div>
 

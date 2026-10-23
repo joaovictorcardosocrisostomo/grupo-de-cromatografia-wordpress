@@ -13,12 +13,12 @@
             Soluções inovadoras em tratamento de efluentes e produção de hidrogênio de baixa emissão de carbono
           </p>
           <a href="#research-section" class="arrow-link" aria-label="Ver informações">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="" role="presentation" class="arrow-scroll"/>
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="" role="presentation" class="arrow-scroll"/>
             <h3>Saiba mais</h3>
           </a>
         </div>
         <div class="hero-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/toc.png" alt="Laboratório LabPOA" />
+          <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/toc.png" alt="Laboratório LabPOA" />
         </div>
       </div>
     </section>
@@ -67,7 +67,7 @@
       <h2 class="titulo-equipamentos">Equipamentos</h2>
       <div class="lista-equipamentos">
         <div class="card-equipamentos">
-          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/toc.png" alt="Imagem do COT"></div>
+          <div class="imagem-equipamento"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/toc.png" alt="Imagem do COT"></div>
           <div class="texto-equipamento"><h3>Analisador de Carbono Orgânico Total (COT)</h3><p>Equipamento utilizado para a determinação precisa de carbono orgânico total, carbono inorgânico e carbono total em amostras líquidas. Amplamente empregado em pesquisas laboratoriais, controle de qualidade e análises ambientais, destaca-se pela alta sensibilidade, confiabilidade dos resultados e facilidade de operação.
 </p></div>
         </div>
@@ -138,7 +138,7 @@
       <div id="coordenador">
         <div id="perfil-img">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/members/ronaldo.jpg"
+            src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/members/ronaldo.jpg"
             alt="Foto de Ronaldo Ferreira do Nascimento"
           />
         </div>
@@ -179,7 +179,7 @@
           <a href="equipe.html"
             >Saiba mais sobre nossos membros
             <div id="seta-membros">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
           ></a>
         </div>
       </div>

@@ -16,7 +16,7 @@
             aria-label="Ver linhas de pesquisa"
           >
             <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg"
+              src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg"
               alt=""
               role="presentation"
               class="arrow-scroll"
@@ -25,7 +25,7 @@
           </a>
         </div>
         <div class="hero-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/gc-bid.png" alt="" />
+          <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/gc-bid.png" alt="" />
         </div>
       </div>
     </section>
@@ -75,7 +75,7 @@
                     the_post_thumbnail('large'); 
                 } else {
                     // Imagem de segurança
-                    echo '<img src="' . get_template_directory_uri() . '/assets/img/brand/logotipo-v2.svg" alt="Sem imagem" />';
+                    echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/img/brand/logotipo-v2.svg" alt="Sem imagem" />';
                 }
                 ?>
               </div>
@@ -100,7 +100,7 @@
         </div>
 
         <div id="noticias-veja-mais">
-          <a href="<?php echo home_url('/noticias'); ?>">Veja mais notícias</a>
+          <a href="<?php echo esc_url( home_url('/noticias') ); ?>">Veja mais notícias</a>
         </div>
       </div>
     </section>
@@ -138,7 +138,7 @@
             <div class="slidePesquisa">
               <div id="filtro"></div>
               <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/gc-ms.png"
+                src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/gc-ms.png"
                 alt="Linhas de pesquisa — GC-MS"
               />
               <a href="croma.html"><div class="caixaLink">
@@ -149,7 +149,7 @@
           <div class="swiper-slide">
             <div class="slidePesquisa">
               <div id="filtro"></div>
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/toc.png" alt="Linhas de pesquisa — TOC" />
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/toc.png" alt="Linhas de pesquisa — TOC" />
               <a href="labpoa.html"><div class="caixaLink">
                 <h3>Ir para LabPOA</h3>
               </div></a>
@@ -159,7 +159,7 @@
             <div class="slidePesquisa">
               <div id="filtro"></div>
               <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/hplc-dad.png"
+                src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/hplc-dad.png"
                 alt="Linhas de pesquisa — HPLC"
               />
               <a href="lat.html"><div class="caixaLink">
@@ -171,7 +171,7 @@
             <div class="slidePesquisa">
               <div id="filtro"></div>
               <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/ics.png"
+                src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/ics.png"
                 alt="Linhas de pesquisa — Lanagua"
               />
               <a href="lanagua.html"><div class="caixaLink">
@@ -183,7 +183,7 @@
             <div class="slidePesquisa">
               <div id="filtro"></div>
               <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/impressorhorizontal.jpeg"
+                src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/impressorhorizontal.jpeg"
                 alt="Linhas de pesquisa — LabItech"
               />
               <a href="labitech.html"><div class="caixaLink">
@@ -205,26 +205,26 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="card-livro">
-              <a href="https://repositorio.ufc.br/bitstream/riufc/32127/1/2017_liv_rfnascimento.pdf" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/books/poas.png" alt="Livro sobre POAs" /></a>
+              <a href="https://repositorio.ufc.br/bitstream/riufc/32127/1/2017_liv_rfnascimento.pdf" target="_blank" rel="noopener noreferrer"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/books/poas.png" alt="Livro sobre POAs" /></a>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="card-livro">
               <a href="https://repositorio.ufc.br/bitstream/riufc/39260/1/2018_liv_rfnascimento.pdf" target="_blank" rel="noopener noreferrer"><img
-                src="<?php echo get_template_directory_uri(); ?>/assets/img/books/cromatografia.png"
+                src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/books/cromatografia.png"
                 alt="Livro sobre Cromatografia"
               /></a>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="card-livro">
-              <a href="https://repositorio.ufc.br/bitstream/riufc/53271/1/2020_liv_rfnascimento.pdf" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/books/adsorcao.png" alt="Livro sobre Adsorção" /></a>
+              <a href="https://repositorio.ufc.br/bitstream/riufc/53271/1/2020_liv_rfnascimento.pdf" target="_blank" rel="noopener noreferrer"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/books/adsorcao.png" alt="Livro sobre Adsorção" /></a>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="card-livro">
               <a href="https://repositorio.ufc.br/bitstream/riufc/58652/1/2021_liv_rfnascimento.pdf" target="_blank" rel="noopener noreferrer"><img
-                src="<?php echo get_template_directory_uri(); ?>/assets/img/books/processos-eletroliticos.png"
+                src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/books/processos-eletroliticos.png"
                 alt="Livro sobre Processos Eletrolíticos"
               /></a>
             </div>
@@ -232,7 +232,7 @@
           <div class="swiper-slide">
             <div class="card-livro">
               <a href="https://repositorio.ufc.br/bitstream/riufc/19569/1/2014-liv_rfnascimento.pdf" target="_blank" rel="noopener noreferrer"><img
-                src="<?php echo get_template_directory_uri(); ?>/assets/img/books/bioadsorventes-capa.jpg"
+                src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/books/bioadsorventes-capa.jpg"
                 alt="Livro sobre Uso de Bioadsorventes"
               /></a>
             </div>
@@ -408,7 +408,7 @@
       <div id="coordenador">
         <div id="perfil-img">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/members/ronaldo.jpg"
+            src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/members/ronaldo.jpg"
             alt="Foto de Ronaldo Ferreira do Nascimento"
           />
         </div>
@@ -447,10 +447,10 @@
 
       <div style="width: 100%;">
         <div id="nossosmembros">
-          <a href="<?php echo home_url('/equipe'); ?>">
+          <a href="<?php echo esc_url( home_url('/equipe') ); ?>">
             Saiba mais sobre nossos membros
             <div id="seta-membros">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
           ></a>
         </div>
       </div>
