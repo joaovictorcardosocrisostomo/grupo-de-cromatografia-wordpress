@@ -18,7 +18,7 @@
           </a>
         </div>
         <div class="hero-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/toc2.png" alt="Laboratório LabPOA" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/toc.png" alt="Laboratório LabPOA" />
         </div>
       </div>
     </section>
@@ -67,7 +67,7 @@
       <h2 class="titulo-equipamentos">Equipamentos</h2>
       <div class="lista-equipamentos">
         <div class="card-equipamentos">
-          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/toc2.png" alt="Imagem do COT"></div>
+          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/toc.png" alt="Imagem do COT"></div>
           <div class="texto-equipamento"><h3>Analisador de Carbono Orgânico Total (COT)</h3><p>Equipamento utilizado para a determinação precisa de carbono orgânico total, carbono inorgânico e carbono total em amostras líquidas. Amplamente empregado em pesquisas laboratoriais, controle de qualidade e análises ambientais, destaca-se pela alta sensibilidade, confiabilidade dos resultados e facilidade de operação.
 </p></div>
         </div>
