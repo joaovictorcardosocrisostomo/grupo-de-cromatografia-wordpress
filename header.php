@@ -45,11 +45,11 @@ if ( is_page('croma') ) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="<?php echo $tema_css; ?>">
+<html lang="pt-BR" data-theme="<?php echo esc_attr( $tema_css ); ?>">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/brand/favicon.svg" />
+    <link rel="icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/brand/favicon.svg" />
     
     <?php wp_head(); ?>
   </head>
@@ -60,49 +60,49 @@ if ( is_page('croma') ) {
           <div id="logoHeader">
             
             <?php if ( is_front_page() ) : ?>
-                <div><h2><?php echo $nome_lab; ?></h2></div>
+                <div><h2><?php echo esc_html( $nome_lab ); ?></h2></div>
                 
             <?php elseif ( is_page('noticias') ) : ?>
-                <div><h1 style="font-weight: bold;"><?php echo $nome_lab; ?></h1></div>
+                <div><h1 style="font-weight: bold;"><?php echo esc_html( $nome_lab ); ?></h1></div>
 
             <?php elseif ( is_page('equipe') ) : ?>
-                <div><h1 style="font-weight: bold;"><?php echo $nome_lab; ?></h1></div>
+                <div><h1 style="font-weight: bold;"><?php echo esc_html( $nome_lab ); ?></h1></div>
                 
             <?php else : ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/<?php echo $logo_img; ?>" alt="Logo <?php echo $nome_lab; ?>" class="logo">
-                <h1><?php echo $nome_lab; ?></h1>
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/brand/<?php echo esc_attr( $logo_img ); ?>" alt="Logo <?php echo esc_attr( $nome_lab ); ?>" class="logo">
+                <h1><?php echo esc_html( $nome_lab ); ?></h1>
             <?php endif; ?>
 
           </div>
           <button class="mobile-menu-btn">☰</button>
           <div id="menuHeader">
             <ul class="menu">
-              <li><a href="<?php echo home_url(); ?>">Início</a></li>
+              <li><a href="<?php echo esc_url( home_url() ); ?>">Início</a></li>
 
               <li class="dropdown-pai">
-                <a href="<?php echo home_url(); ?>#noticias">Notícias</a>
+                <a href="<?php echo esc_url( home_url() ); ?>#noticias">Notícias</a>
                 <ul class="dropdown-gaveta">
-                  <li><a href="<?php echo home_url(); ?>#noticias">Recentes</a></li>
-                  <li><a href="<?php echo home_url('/noticias'); ?>">Todas</a></li>
+                  <li><a href="<?php echo esc_url( home_url() ); ?>#noticias">Recentes</a></li>
+                  <li><a href="<?php echo esc_url( home_url('/noticias') ); ?>">Todas</a></li>
                 </ul>
               </li>
               
               <li class="dropdown-pai">
-                <a href="<?php echo home_url(); ?>#linhasPesquisa">Pesquisas</a>
+                <a href="<?php echo esc_url( home_url() ); ?>#linhasPesquisa">Pesquisas</a>
                 <ul class="dropdown-gaveta">
-                  <li><a href="<?php echo home_url('/labpoa'); ?>">LabPOA</a></li>
-                  <li><a href="<?php echo home_url('/lat'); ?>">LAT</a></li>
-                  <li><a href="<?php echo home_url('/lanagua'); ?>">Lanagua</a></li>
-                  <li><a href="<?php echo home_url('/croma'); ?>">LabCroma</a></li>
-                  <li><a href="<?php echo home_url('/labitech'); ?>">LabItech</a></li>
+                  <li><a href="<?php echo esc_url( home_url('/labpoa') ); ?>">LabPOA</a></li>
+                  <li><a href="<?php echo esc_url( home_url('/lat') ); ?>">LAT</a></li>
+                  <li><a href="<?php echo esc_url( home_url('/lanagua') ); ?>">Lanagua</a></li>
+                  <li><a href="<?php echo esc_url( home_url('/croma') ); ?>">LabCroma</a></li>
+                  <li><a href="<?php echo esc_url( home_url('/labitech') ); ?>">LabItech</a></li>
                 </ul>
               </li>
-              <li><a href="<?php echo home_url(); ?>#publicacoes">Publicações</a></li>
+              <li><a href="<?php echo esc_url( home_url() ); ?>#publicacoes">Publicações</a></li>
               <li class="dropdown-pai">
-                <a href="<?php echo home_url(); ?>#coordenacao">Membros</a>
+                <a href="<?php echo esc_url( home_url() ); ?>#coordenacao">Membros</a>
                 <ul class="dropdown-gaveta">
-                  <li><a href="<?php echo home_url(); ?>#coordenacao">Coordenação</a></li>
-                  <li><a href="<?php echo home_url('/equipe'); ?>">Outros</a></li>
+                  <li><a href="<?php echo esc_url( home_url() ); ?>#coordenacao">Coordenação</a></li>
+                  <li><a href="<?php echo esc_url( home_url('/equipe') ); ?>">Outros</a></li>
                 </ul>
               </li>
             </ul>

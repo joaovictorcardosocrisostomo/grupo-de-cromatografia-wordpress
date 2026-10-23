@@ -19,7 +19,7 @@
                     $anos_publicados = $wpdb->get_col("SELECT DISTINCT YEAR(post_date) FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY post_date DESC");
                     
                     foreach($anos_publicados as $ano_filtro) {
-                        echo '<li><a href="#" class="filter-btn" data-filter="' . $ano_filtro . '">' . $ano_filtro . '</a></li>';
+                        echo '<li><a href="#" class="filter-btn" data-filter="' . esc_attr( $ano_filtro ) . '">' . esc_html( $ano_filtro ) . '</a></li>';
                     }
                     ?>
                     
@@ -53,19 +53,19 @@
                     }
                     $ano_atual = $ano_da_noticia;
                     ?>
-                    <h3 class="noticia-year-section" data-year="<?php echo $ano_atual; ?>"><?php echo $ano_atual; ?></h3>
-                    <div class="noticias-content" data-year="<?php echo $ano_atual; ?>">
+                    <h3 class="noticia-year-section" data-year="<?php echo esc_attr( $ano_atual ); ?>"><?php echo esc_html( $ano_atual ); ?></h3>
+                    <div class="noticias-content" data-year="<?php echo esc_attr( $ano_atual ); ?>">
                     <?php
                 }
                 ?>
           
-                <div class="noticia-card" data-year="<?php echo $ano_atual; ?>">
+                <div class="noticia-card" data-year="<?php echo esc_attr( $ano_atual ); ?>">
                   <div class="noticia-imagem">
                     <?php 
                     if ( has_post_thumbnail() ) {
                         the_post_thumbnail('large'); 
                     } else {
-                        echo '<img src="' . get_template_directory_uri() . '/assets/img/brand/logotipo-v2.svg" alt="Sem imagem" />';
+                        echo '<img src="' . esc_url( get_template_directory_uri() ) . '/assets/img/brand/logotipo-v2.svg" alt="Sem imagem" />';
                     }
                     ?>
                   </div>

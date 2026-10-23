@@ -13,12 +13,12 @@
             Análises químicas de alta precisão para monitoramento e qualidade de água
           </p>
           <a href="#research-section" class="arrow-link" aria-label="Ver informações">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="" role="presentation" class="arrow-scroll"/>
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="" role="presentation" class="arrow-scroll"/>
             <h3>Saiba mais</h3>
           </a>
         </div>
         <div class="hero-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/uvvishorizontal.jpeg" alt="Laboratório Lanagua" />
+          <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/uvvishorizontal.jpeg" alt="Laboratório Lanagua" />
         </div>
       </div>
     </section>
@@ -66,11 +66,11 @@
     <h2 class="titulo-equipamentos">Equipamentos</h2>
       <div class="lista-equipamentos">
         <div class="card-equipamentos">
-          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/cromaionshorizontal.jpeg" alt="Imagem do BID"></div>
+          <div class="imagem-equipamento"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/cromaionshorizontal.jpeg" alt="Imagem do BID"></div>
           <div class="texto-equipamento"><h3>Cromatógrafo de Íons</h3><p>É utilizado na identificação e quantificação de íons inorgânicos e orgânicos em diferentes matrizes ambientais. A técnica apresenta alta sensibilidade e seletividade, sendo fundamental para a avaliação da qualidade da água, monitoramento ambiental e estudos voltados ao controle e mitigação da poluição, em conformidade com normas e padrões de qualidade.</p></div>
         </div>
         <div class="card-equipamentos">
-          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/absorlanhorizontal.jpeg" alt="Imagem do MS"></div>
+          <div class="imagem-equipamento"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/absorlanhorizontal.jpeg" alt="Imagem do MS"></div>
           <div class="texto-equipamento"><h3>Espectrômetro de Absorção Atômica em Chama (FAAS)</h3><p>É empregado na determinação de metais pesados em amostras ambientais, como água, solo e sedimentos. A técnica apresenta boa sensibilidade e reprodutibilidade, sendo amplamente utilizada em estudos de contaminação ambiental, controle ambiental e avaliação da presença de metais em níveis de traços.</p></div>
         </div>
       </div>
@@ -118,7 +118,7 @@
       <div id="coordenador">
         <div id="perfil-img">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/members/ronaldo.jpg"
+            src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/members/ronaldo.jpg"
             alt="Foto de Ronaldo Ferreira do Nascimento"
           />
         </div>
@@ -159,7 +159,7 @@
           <a href="equipe.html"
             >Saiba mais sobre nossos membros
             <div id="seta-membros">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
           ></a>
         </div>
       </div>

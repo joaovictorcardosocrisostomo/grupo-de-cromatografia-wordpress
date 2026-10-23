@@ -1,10 +1,21 @@
 <?php
-// GATILHO: Só roda se colocar ?importar_equipe=sim na URL
-if ( isset($_GET['importar_equipe']) && $_GET['importar_equipe'] == 'sim' ) {
+// Impede acesso direto ao arquivo fora do WordPress
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
+// GATILHO: Só roda para administradores logados, com ?importar_equipe=sim e nonce válido na URL
+// (gere o link com: wp_nonce_url( home_url( '/?importar_equipe=sim' ), 'importar_equipe' ))
+if ( isset($_GET['importar_equipe']) && $_GET['importar_equipe'] === 'sim' ) {
     add_action('init', 'importacao_magica_membros_cromatografia', 99);
 }
 
 function importacao_magica_membros_cromatografia() {
+    if ( ! current_user_can( 'manage_options' ) ) {
+        wp_die( 'Sem permissão.', 403 );
+    }
+    check_admin_referer( 'importar_equipe' );
+
     
     // Evita duplicidade criando as categorias primeiro
     $cargos = ['coordenador', 'pesquisador', 'doutorando', 'mestrando', 'iniciacao-cientifica', 'alumni-doutorado', 'alumni-mestrado', 'alumni-ic'];

@@ -13,12 +13,12 @@
             Detecção de contaminantes em níveis ultrabaixos com tecnologias especializadas
           </p>
           <a href="#research-section" class="arrow-link" aria-label="Ver informações">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="" role="presentation" class="arrow-scroll"/>
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="" role="presentation" class="arrow-scroll"/>
             <h3>Saiba mais</h3>
           </a>
         </div>
         <div class="hero-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/absorlathorizontal.jpeg" alt="Laboratório LAT" />
+          <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/absorlathorizontal.jpeg" alt="Laboratório LAT" />
         </div>
       </div>
     </section>
@@ -66,11 +66,11 @@
       <h2 class="titulo-equipamentos">Equipamentos</h2>
       <div class="lista-equipamentos">
         <div class="card-equipamentos">
-          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/hplchorizontal.jpeg" alt="Imagem do BID"></div>
+          <div class="imagem-equipamento"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/hplchorizontal.jpeg" alt="Imagem do BID"></div>
           <div class="texto-equipamento"><h3>Cromatógrafo Líquido de Alta Eficiência (HPLC)</h3><p>É utilizado na identificação e quantificação de contaminantes emergentes em níveis de traços, como pesticidas, HPAs e outros compostos orgânicos de interesse ambiental. A técnica permite a análise de diferentes matrizes ambientais com alta sensibilidade, precisão e seletividade, sendo fundamental em estudos de monitoramento e avaliação de impactos antrópicos.</p></div>
         </div>
         <div class="card-equipamentos">
-          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/absorlathorizontal.jpeg" alt="Imagem do MS"></div>
+          <div class="imagem-equipamento"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/absorlathorizontal.jpeg" alt="Imagem do MS"></div>
           <div class="texto-equipamento"><h3>Espectrômetro de Absorção Atômica em Chama (FAAS)</h3><p>É empregado na determinação de metais pesados em amostras ambientais, como água, solo e sedimentos. A técnica apresenta boa sensibilidade e reprodutibilidade, sendo amplamente utilizada em estudos de contaminação ambiental, controle ambiental e avaliação da presença de metais em níveis de traços.</p></div>
         </div>
       </div>
@@ -119,7 +119,7 @@
       <div id="coordenador">
         <div id="perfil-img">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/members/ronaldo.jpg"
+            src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/members/ronaldo.jpg"
             alt="Foto de Ronaldo Ferreira do Nascimento"
           />
         </div>
@@ -160,7 +160,7 @@
           <a href="equipe.html"
             >Saiba mais sobre nossos membros
             <div id="seta-membros">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
           ></a>
         </div>
       </div>

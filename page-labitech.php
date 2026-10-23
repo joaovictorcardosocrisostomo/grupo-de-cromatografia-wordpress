@@ -13,12 +13,12 @@
             Tecnologia, engenharia química e eletroquímica para produção de hidrogênio de baixa emissão de carbono
           </p>
           <a href="#research-section" class="arrow-link" aria-label="Ver informações">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="" role="presentation" class="arrow-scroll"/>
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="" role="presentation" class="arrow-scroll"/>
             <h3>Saiba mais</h3>
           </a>
         </div>
         <div class="hero-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/impressorhorizontal.jpeg" alt="Laboratório LabItech" />
+          <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/impressorhorizontal.jpeg" alt="Laboratório LabItech" />
         </div>
       </div>
     </section>
@@ -66,7 +66,7 @@
       <h2 class="titulo-equipamentos">Equipamentos</h2>
       <div class="lista-equipamentos">
         <div class="card-equipamentos">
-          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/impressorhorizontal.jpeg" alt="Imagem do BID"></div>
+          <div class="imagem-equipamento"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/impressorhorizontal.jpeg" alt="Imagem do BID"></div>
           <div class="texto-equipamento"><h3>Impressora 3D</h3><p>É utilizada para a prototipação rápida de ferramentas, componentes e reatores aplicados a sistemas de tratamento de água e processos eletroquímicos. O equipamento possibilita a fabricação de peças funcionais personalizadas para montagem, suporte e organização dos reatores, permitindo maior flexibilidade no desenvolvimento experimentale otimização do desempenho dos sistemas.</p></div>
         </div>
       </div>
@@ -114,7 +114,7 @@
       <div id="coordenador">
         <div id="perfil-img">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/members/ronaldo.jpg"
+            src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/members/ronaldo.jpg"
             alt="Foto de Ronaldo Ferreira do Nascimento"
           />
         </div>
@@ -155,7 +155,7 @@
           <a href="equipe.html"
             >Saiba mais sobre nossos membros
             <div id="seta-membros">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
           ></a>
         </div>
       </div>

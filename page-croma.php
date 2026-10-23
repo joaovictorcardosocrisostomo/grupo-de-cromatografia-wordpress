@@ -13,12 +13,12 @@
             Metodologias analíticas cromatográficas avançadas para aplicações ambientais, alimentares e produtos naturais
           </p>
           <a href="#research-section" class="arrow-link" aria-label="Ver informações">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="" role="presentation" class="arrow-scroll"/>
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="" role="presentation" class="arrow-scroll"/>
             <h3>Saiba mais</h3>
           </a>
         </div>
         <div class="hero-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/gc-ms.png" alt="Laboratório LabCroma" />
+          <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/gc-ms.png" alt="Laboratório LabCroma" />
         </div>
       </div>
     </section>
@@ -66,15 +66,15 @@
       <h2 class="titulo-equipamentos">Equipamentos</h2>
       <div class="lista-equipamentos">
         <div class="card-equipamentos">
-          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/gc-ms.png" alt="Imagem do MS"></div>
+          <div class="imagem-equipamento"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/gc-ms.png" alt="Imagem do MS"></div>
           <div class="texto-equipamento"><h3>Cromatógrafo Gasoso acoplada à Espectrometria de Massas (CG-MS)</h3><p>É utilizado para a separação, identificação e quantificação de compostos orgânicos voláteis e semivoláteis em diferentes matrizes. A técnica combina alta eficiência cromatográfica e elevada seletividade, sendo essencial em estudos de poluição atmosférica, veicular e ambiental, bem como em aplicações ambientais, alimentares e de produtos naturais.</p></div>
         </div>
         <div class="card-equipamentos">
-          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/gc-fid.jpg" alt="Imagem do FID"></div>
+          <div class="imagem-equipamento"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/gc-fid.jpg" alt="Imagem do FID"></div>
           <div class="texto-equipamento"><h3>Cromatógrafo Gasoso com Detector de Ionização de Chama (GC-FID)</h3><p>É utilizado na análise quantitativa de compostos orgânicos voláteis e semivoláteis, com excelente reprodutibilidade e sensibilidade. É uma técnica consolidada para aplicações em controle ambiental, avaliação da poluição atmosférica e veicular, e análises de produtos ambientais e naturais.</p></div>
         </div>
         <div class="card-equipamentos">
-          <div class="imagem-equipamento"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/labs/gc-bid.png" alt="Imagem do BID"></div>
+          <div class="imagem-equipamento"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/labs/gc-bid.png" alt="Imagem do BID"></div>
           <div class="texto-equipamento"><h3>Cromatógrafo Gasoso com Detector de Ionização por Descarga (GC-BID)</h3><p>É empregado na detecção universal de compostos orgânicos e inorgânicos, apresentando alta sensibilidade e ampla faixa linear. É amplamente utilizado no monitoramento ambiental e na análise de gases, permitindo a quantificação confiável de compostos em baixos níveis de concentração.</p></div>
         </div>
       </div>
@@ -122,7 +122,7 @@
       <div id="coordenador">
         <div id="perfil-img">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/members/ronaldo.jpg"
+            src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/members/ronaldo.jpg"
             alt="Foto de Ronaldo Ferreira do Nascimento"
           />
         </div>
@@ -163,7 +163,7 @@
           <a href="equipe.html"
             >Saiba mais sobre nossos membros
             <div id="seta-membros">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/arrow-down.svg" alt="" /></div
           ></a>
         </div>
       </div>
